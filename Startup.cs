@@ -63,7 +63,7 @@ namespace Reto
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Producto}/{action=Catalogo}/{id?}");
+                    pattern: "{controller=Producto}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
