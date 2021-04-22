@@ -1,6 +1,6 @@
 # Reto-Tecnico
 Visualiza la Aplicación Web
-https://reto-tecnico-aplicacion.herokuapp.com/Producto/Index
+https://reto-tecnico-aplicacion.herokuapp.com/
 
 # Credenciales
  Usuario: mario@gmail.com
