@@ -1,0 +1,33 @@
+@model IEnumerable<Reto.Models.Producto>
+
+@{
+    ViewData["Title"] = "Catalogo de Productos";
+}
+<div class="background_productos background_total">
+<div class="container pt-5">
+
+<h1 class="white" >Catálogo de Productos</h1>
+
+<div class="row ">
+
+
+   @foreach (var item in Model)
+   {
+
+     if (item.Condition == true)
+     {
+         <div class="card-group col-md-4 p-4 text-center align-items-center">
+          <div class="card">
+            <img src="@item.Image" class="card-img-top" alt="" width="400px" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">Producto: @Html.DisplayFor(modelItem => item.Name)</h5>
+              <p class="card-text">Descripción: @Html.DisplayFor(modelItem => item.Description)</p>
+              <p class="card-text">Precio: S/.@Html.DisplayFor(modelItem => item.Price)</p>
+            </div>
+          </div>
+         </div>
+     }
+   }
+</div>
+</div>
+</div>

@@ -1,0 +1,60 @@
+@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Iniciar Sesión";
+}
+ 
+
+ <div class="background_login background_total pt-5">
+ <h1 class="white" >Iniciar Sesión</h1>
+
+
+
+<section>
+
+  <div class="container-fluid">
+    <div class="row justify-content-center" >
+      <div class="col-xl-7">
+          <div class="card">
+            <div class="justify-content-center text-center">
+              <div class="container justify-content-center text-center">
+                  <div class="container col-md-10">
+   
+                    <form id="account" method="post">
+                <h4 class="pt-4">Introduce tu correo y tu contraseña</h4>
+                <hr />
+                <div asp-validation-summary="All" class="text-danger "></div>
+                <div class="form-group m-5">
+                    <label>Correo</label>
+                    <input asp-for="Input.Email" class="form-control" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group m-5">
+                    <label>Contraseña</label>
+                    <input asp-for="Input.Password" class="form-control" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                </div>
+            </form>
+ 
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</section>
+
+</div>
+
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

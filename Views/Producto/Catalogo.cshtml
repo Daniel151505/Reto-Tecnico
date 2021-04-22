@@ -1,0 +1,39 @@
+@model IEnumerable<Reto.Models.Producto>
+
+@{
+    ViewData["Title"] = "Lista de Productos Registrados";
+}
+
+<div class="background_admin background_total">
+<div class="container pt-5">
+
+<h1 class="white">Productos Registrados</h1>
+
+<div class="row ">
+
+
+   @foreach (var item in Model)
+   {
+
+<div class="card-group col-md-4 p-4 text-center align-items-center">
+  <div class="card">
+    <img src="@item.Image" class="card-img-top" alt="" width="400px" height="200px">
+    <div class="card-body">
+      <h5 class="card-title">Codigo: @Html.DisplayFor(modelItem => item.Id)</h5>
+      <h5 class="card-title">Producto: @Html.DisplayFor(modelItem => item.Name)</h5>
+      <p class="card-text">Descripción: @Html.DisplayFor(modelItem => item.Description)</p>
+      <p class="card-text">Precio: S/.@Html.DisplayFor(modelItem => item.Price)</p>
+      <p class="card-text" type="checkbox">Estado: @Html.DisplayFor(modelItem => item.Condition)</p>
+    </div>
+    <div class="text-center align-items-center mb-3">
+      <a class="btn btn-warning" asp-action="Editar" asp-route-id="@item.Id">Editar</a>
+      <a class="btn btn-danger" asp-action="Eliminar" asp-route-id="@item.Id">Eliminar</a>
+    </div>
+  </div>
+</div>
+   }
+</div>
+</div>
+</div>
+
+

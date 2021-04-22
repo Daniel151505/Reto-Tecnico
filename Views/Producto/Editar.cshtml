@@ -1,0 +1,76 @@
+@model Reto.Models.Producto
+
+@{
+    ViewData["Title"] = "Editar Productos";
+}
+<div class="background_edit background_total pt-5">
+ <h1 class="white" >Editar Productos</h1>
+
+
+
+<section>
+
+  <div class="container-fluid">
+    <div class="row justify-content-center" >
+      <div class="col-xl-7">
+          <div class="card">
+            <div class="justify-content-center text-center">
+              <div class="container justify-content-center text-center">
+                  <div class="container col-md-10">
+   
+                    <form asp-controller="Producto" asp-action="Editar">
+                        <div class="pt-4">
+                            <label asp-for="Name" class="control-label"></label>
+                            <input asp-for="Name" type="text" maxlength="20" minlength="4" class="form-control"> 
+                            <span asp-validation-for="Name" class="text-danger"></span> 
+                        </div> 
+
+                        <div class="pt-4">
+                            <label asp-for="Description" class="control-label"></label>
+                            <input asp-for="Description" type="text" maxlength="30" minlength="5" class="form-control"> 
+                            <span asp-validation-for="Description" class="text-danger"></span> 
+                        </div> 
+
+                        <div class="pt-4">
+                            <label>Dirección de imagen</label>
+                            <input asp-for="Image" type="url" class="form-control"> 
+                            <span asp-validation-for="Image" class="text-danger"></span> 
+                        </div> 
+
+                        <div class="pt-4">
+                            <label asp-for="Price" class="control-label"></label>
+                            <input asp-for="Price" type="number" class="form-control" > 
+                            <span asp-validation-for="Price" class="text-danger"></span> 
+                        </div> 
+
+                        <div class="pt-4">
+                            <label> Estado </label>
+                            <select asp-for="Condition" class="control-label">
+                                <option value="true">Activo</option>
+                                <option value="false">Inactivo</option>
+                            </select>
+                        </div> 
+
+                        <br>
+                        <div style="text-align:center;" >
+                            <button type="submit" class="btn btn-success mb-3">Editar</button>
+                        </div>
+
+                    </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</section>
+
+</div>
+
+
+
+
+

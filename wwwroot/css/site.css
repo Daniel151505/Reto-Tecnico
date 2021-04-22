@@ -1,0 +1,183 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.white {
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-bottom{
+  border-bottom: none;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/* Button */
+
+.button {
+
+  padding-top: 6px;
+  text-align: center;
+
+}
+
+.button a, .button button{
+
+background: #004A92;
+color: white;
+border-radius: 30px;
+margin: 2px 0 0 2px;
+padding: 4px 25px 4px 25px;
+border: 3px solid #EDC751;
+
+}
+
+.button a:hover, .button button:hover{
+
+background: #EDC751;
+color: #004A92;
+text-decoration: none;
+
+}
+
+
+/* Background NavBar */
+
+.backgroundNavBar{
+
+background:#004A92;
+
+}
+
+.option {
+  padding-top: 6px;
+  text-align: center;
+}
+
+.option a{
+
+  color: white;
+  margin: 5px;
+
+}
+
+.option a:hover {
+
+  color: #EDC751;
+  text-decoration: none;
+
+}
+
+/* Logo */
+
+.logo {
+
+  padding-top: 6px;
+
+}
+
+/* Card */
+
+.card{
+  box-sizing: content-box;
+  margin: 30px 15px;
+  min-height: 200px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+  background: #fff;
+  border-radius: 15px;
+}
+
+/* Editar */
+
+.background_total{
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+
+.background_edit{
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/fondoEditar.jpg);
+}
+
+.background_admin{
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/fondoAdmin.jpg);
+}
+
+.background_registro{
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/fondoRegistro.jpg);
+}
+
+.background_productos{
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/fondoProductos.jpg);
+}
+
+.background_login{
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/fondoLogin.jpg);
+  height: 100vh;
+}
